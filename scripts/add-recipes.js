@@ -1,8 +1,6 @@
 const { By, Key, until, promise } = require('selenium-webdriver');
 
-const deley = 1000;
-
-module.exports = async function(driver) {
+module.exports = async function(driver,deley) {
   let shoppingBtnQuery = By.css('nav .nav-item-shopping a');
 
   await driver.wait(until.elementLocated(shoppingBtnQuery));
@@ -19,12 +17,13 @@ module.exports = async function(driver) {
   await driver.wait(until.elementLocated(buyRecipeBtnQuery));
   await driver.findElement(buyRecipeBtnQuery).click();
   await driver.sleep(deley/2);
-  await driver.findElement(buyRecipeBtnQuery).click();
-  await driver.sleep(deley/2);
-  await driver.findElement(buyRecipeBtnQuery).click();
-  await driver.sleep(deley/2);
-  await driver.findElement(buyRecipeBtnQuery).click();
-  await driver.sleep(deley);
+
+  //await driver.findElement(buyRecipeBtnQuery).click();
+  //await driver.sleep(deley/2);
+  //await driver.findElement(buyRecipeBtnQuery).click();
+  //await driver.sleep(deley/2);
+  //await driver.findElement(buyRecipeBtnQuery).click();
+  //await driver.sleep(deley);
 
   let backToCartBtnQuery = By.css('cart-notification button');
   await driver.wait(until.elementLocated(backToCartBtnQuery));
