@@ -2,9 +2,8 @@ const { By, Key, until, promise } = require('selenium-webdriver');
 
 module.exports = async function(driver,deley) {
   let dotsBtnQuery = By.css('product-item button.i-dots');
+  await driver.sleep(deley*2);
   await driver.wait(until.elementLocated(dotsBtnQuery));
-  await driver.executeScript("arguments[0].scrollIntoView()", driver.findElement(dotsBtnQuery));
-  await driver.sleep(deley);
   await driver.findElement(dotsBtnQuery).click();
   await driver.sleep(deley);
 
