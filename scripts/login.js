@@ -16,7 +16,7 @@ const {Builder, By, Key, until} = require('selenium-webdriver');
     await driver.quit();
   }
 })();
-*/
+//*/
 
 /*
 var webdriver = require('selenium-webdriver'),

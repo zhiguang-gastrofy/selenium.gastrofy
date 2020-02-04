@@ -1,0 +1,25 @@
+{
+  "name": "selenium.gastrofy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chromedriver": "^79.0.3",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node ./scripts/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhiguang-gastrofy/selenium.gastrofy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhiguang-gastrofy/selenium.gastrofy/issues"
+  },
+  "homepage": "https://github.com/zhiguang-gastrofy/selenium.gastrofy#readme"
+}

@@ -9,10 +9,10 @@ const searchRecipe = require('./search-recipe');
 
   try {
     await driver.get('https://v5-dev.gastrofy.se');
-    await addRecipes(driver,1000);
-    await changePostal(driver,1000);
-    await substitute(driver,1000);
-    await searchRecipe(driver,1000);
+    await addRecipes(driver,2000);
+    await changePostal(driver,2000);
+    await substitute(driver,2000);
+    await searchRecipe(driver,2000);
 
   } finally {
     await driver.quit();
